@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#block1, #block2, #block3 {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 350px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#quest1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.answer {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #f0f0f0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.answer:hover {
+    background: #74ebd5;
+    color: white;
+}
+
+#start_but, #back {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #74ebd5;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#start_but:hover, #back:hover {
+    background: #4bb3a7;
+}
+
+#score {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #222;
+}
+
+#block2 {
+    display: none;
+}
+
+#block3 {
+    display: none;
+}
+.correct {
+    background: #4CAF50 !important; 
+    color: white !important;
+}
+
+.wrong {
+    background: #E74C3C !important; 
+    color: white !important;
+}
+#progress-container {
+    width: 100%;
+    background: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #74ebd5, #4bb3a7);
+    transition: width 0.4s ease;
+}
+
+#progress-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #333;
+}
